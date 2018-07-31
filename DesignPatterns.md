@@ -17,16 +17,16 @@ We can implmenet these Design patterns in multiple languages and Techologies
 java is most suitable language to implement design pattern.
 
  Classfication of Design patterns
- _________________________________
+ -----------------------------------
 
 Mainly There are 3 basic classfications of patterns 
-1)Creational Patterns:-- The process of object creation
-  a)AbstractFactory patterns
+1 Creational Patterns:-- The process of object creation
+  a) AbstractFactory patterns
   b)Builderpattern
   c)Factorypattern
   d)ProtoType pattern
   e)singleton pattern
-2)Structural patterns:-- Deal with the Composition of classes and objects
+2 Structural patterns:-- Deal with the Composition of classes and objects
 
 How objects and classes can be combined to form larger structure.
   a)Adapterpattern
@@ -37,9 +37,7 @@ How objects and classes can be combined to form larger structure.
   f)flyweight pattern
   g)proxypattern
 
-3)Behavioral patterns:-- Deal with the interaction of classes and objects
-
-
+3 Behavioral patterns:-- Deal with the interaction of classes and objects
   a)ChainofResponsiblitypattern
   b)commandpattern
   c)interpreterpattern
