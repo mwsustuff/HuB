@@ -20,61 +20,60 @@ java is most suitable language to implement design pattern.
  -----------------------------------
 
 Mainly There are 3 basic classfications of patterns 
-1 Creational Patterns:-- The process of object creation
-  a) AbstractFactory patterns
-  b)Builderpattern
-  c)Factorypattern
-  d)ProtoType pattern
-  e)singleton pattern
-2 Structural patterns:-- Deal with the Composition of classes and objects
+1. __Creational Patterns__:-- The process of object creation
+  * AbstractFactory patterns
+  * Builderpattern
+  * Factorypattern
+  * ProtoType pattern
+  * singleton pattern
+2. __Structural patterns__:-- Deal with the Composition of classes and objects. How objects and classes can be combined to form larger structure.
+  * Adapterpattern
+  * Bridgepattern
+  * compositepattern
+  * Decoratorpattern
+  * Facadepattern
+  * flyweight pattern
+  * proxypattern
 
-How objects and classes can be combined to form larger structure.
-  a)Adapterpattern
-  b)Bridgepattern
-  c)compositepattern
-  d)Decoratorpattern
-  e)Facadepattern
-  f)flyweight pattern
-  g)proxypattern
+3 __Behavioral patterns__:-- Deal with the interaction of classes and objects
+  * ChainofResponsiblitypattern
+  * commandpattern
+  * interpreterpattern
+  * iterator pattern
+  * mediatorpattern
+  * Momoent pattern
+  * Observerpattern
+  * statepattern
+  * starategypattern
+  * Templatepattern
+  * visitor pattern
 
-3 Behavioral patterns:-- Deal with the interaction of classes and objects
-  a)ChainofResponsiblitypattern
-  b)commandpattern
-  c)interpreterpattern
-  d)iterator pattern
-  e)mediatorpattern
-  f)Momoent pattern
-  g)Observerpattern
-  h)statepattern
-  i)starategypattern
-  j)Templatepattern
-  k)visitor pattern
-
-Now we can see the Regularly used design patterns in real time java projects as they are classfied based on the type of applciations which we are developing.
-### Corejavalevel or Standalone Application level Designpatterhs
+> Now we can see the Regularly used design patterns in real time java projects as they are classfied based on the type of applciations which we are developing.
+ 
+ Corejavalevel or Standalone Application level Designpatterhs
 =============================================================
-FactoryMethod DesignPattern
-SingleTon DesignPattern
-Synchronized singleton DesignPattern
-Factory pattern DesignPattern
-AbstractFactory DesignPattern
-Builder DesignPattern
-ProtoType DesignPattern
-Template method DesignPattern
-Adapter DesignPattern
-FastlineReader DesignPattern
-DTo/Vo Design pattern
-Ioc or Dependency Injection Design pattern
-Fly Weight DesignPattern
+* FactoryMethod DesignPattern
+* SingleTon DesignPattern
+* Synchronized singleton DesignPattern
+* Factory pattern DesignPattern
+* AbstractFactory DesignPattern
+* Builder DesignPattern
+* ProtoType DesignPattern
+* Template method DesignPattern
+* Adapter DesignPattern
+* FastlineReader DesignPattern
+* DTo/Vo Design pattern
+* Ioc or Dependency Injection Design pattern
+* Fly Weight DesignPattern
 
 ### Web Level designPattern
-========================
-Mvc1&Mvc2 DesignPattern
-ViewHelperDesignPattern
-Compositeview DesignPattern
-FrontController DesignPattern
-InterceptingFilter DesignPattern
-Abstract controller Design pattern
+
+* Mvc1&Mvc2 DesignPattern
+* ViewHelperDesignPattern
+* Compositeview DesignPattern
+* FrontController DesignPattern
+* InterceptingFilter DesignPattern
+* Abstract controller Design pattern
 
 ### Enterprise Application level Design patterns
 ================================================
@@ -90,25 +89,22 @@ Buseiness tier-->sessionfacade,messagefacde,business object.
 
 FactoryMethod DesignPattern
 ============================
-problem
-========
+ __problem__
 When a java class hving private constructor , then outside of that class object creation of that class is not possible
 
-solution
-===============
+__solution__
 use Factory method desginpatten
 
-def: (Factory method is java method) The method in javaclass which is capable of constructing its own javaclassobject is called factory method .
-Application Areas
-====================
+*def*: (Factory method is java method) The method in javaclass which is capable of constructing its own javaclassobject is called factory method .
+__Application Areas__
  When java class is hving only private constrcutor then in order to create object of that java class
  outside of that class, we use Factory method.
  To make java class as immutable java class(like  java.lang.String) we use factory method as helper class or code.
-Rules to use this Factory method
-===================================
-1)The factory method should hv current class name as return type.
-2)Method definitation should hv logic of creating & returning current class object.
-3)factory method must be a public method.
+__Rules to use this Factory method__
+
+1. The factory method should hv current class name as return type.
+2. Method definitation should hv logic of creating & returning current class object.
+3. factory method must be a public method.
 
 note: The factory method can be static factory method or an instance factory method
 if current class is an abstract class, then method should return one of its subclass object.
