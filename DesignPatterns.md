@@ -106,22 +106,23 @@ __Rules to use this Factory method__
 2. Method definitation should hv logic of creating & returning current class object.
 3. factory method must be a public method.
 
-note: The factory method can be static factory method or an instance factory method
+> note: The factory method can be static factory method or an instance factory method
 if current class is an abstract class, then method should return one of its subclass object.
 
 static factory method is usefull to create an object f a java class outside of that class when that class is hving only private Constrcutor.
+~~~
 ex:  Some of the examples for predefined methods.are.
 a)Class c=Class.forName(--);
 b)Thread t=Thread.currentThread();
-
-note: Java class can hv Factory methods even though that class is hving public constructor.
+~~~
+> note: Java class can hv Factory methods even though that class is hving public constructor.
 instance factory method usefull to create a new object for java class by useing existing object and its data.
 ex: Example for predefined instance factory methods is
 String s1="welcome to shiva online Training";//Existing object
 String s2="s1.substring(s1);//new Objectt...
 
 eg:
-====
+~~~
 class A
 {
 int a=100;
@@ -152,7 +153,9 @@ A  b=A.funA();// factory method design patterns
 
 
 }
+~~~
 eg:
+~~~
 class Test
 {
 	int x;
@@ -195,25 +198,26 @@ public class FactoryEx {
 	}
 
 }
-
+~~~
 eg:--
+~~~
 Class c=Class.forName(---)
 Thread t=Thread.currentThread();
 String s=String.valueOf(20);
+~~~
 
 Now we can see one example on how we can develop our own  immutable java class by useing factory method.
-Defination of immutable javaclass:
-==================================
+
+__Defination of immutable javaclass:__
+
 immutable class is java class which once created its contnets cannot be changed .immutable object are the java objects whose state cannot be changed once constructred eg:string class.
-Advanatages with immutable nature
-===================================
+__Advanatages with immutable nature__
 Immutable objects are automatically thread-safe,the overhead casused due to use of Synchronization is avoided.
 once created the state of the immutable object cannot be changed so there is not possiblity of them geting into inconcstistent state.
-rules
-=========
-1)take class as final class (or) make method and memeber variale as final.
-2) to take all member varibles as private
-3) if mehod demands to modfy data take that method as factory method.
+__rules__
+1. take class as final class (or) make method and memeber variale as final.
+2. to take all member varibles as private
+3. if mehod demands to modfy data take that method as factory method.
 eg
 ======
 
