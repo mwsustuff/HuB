@@ -1,15 +1,13 @@
-# Design patterns 
-Designpattens are set of rules which come as best solutions for re-occuring problems of 
+Design patterns 
+=================================================
+* Designpattens are set of rules which come as best solutions for re-occuring problems of 
 application development.
-Designpattens are best practices to use s/w technologies much effectively.
+* Designpattens are best practices to use s/w technologies much effectively.
+* The worst solution for reocurring problems if application develop is called anti pattern.
+* The iso organization maintained documentation of both design patterns and anti patterns.
+* Most of the design patterns are given by Four people called Gof(Fama,Fleem,Johnson and Vlissed)
 
-The worst solution for reocurring problems if application develop is called anti pattern.
-
-The iso organization maintained documentation of both design patterns and anti patterns.
-
-Most of the design patterns are given by Four people called Gof(Fama,Fleem,Johnson and Vlissed)
-
-Every Design pattern contain The following essential details
+__Every Design pattern contain The following essential details__
 pattername
 problem
 solution
@@ -18,7 +16,8 @@ consequences.
 We can implmenet these Design patterns in multiple languages and Techologies
 java is most suitable language to implement design pattern.
 
-### Classfication of Design patterns
+ Classfication of Design patterns
+ _________________________________
 
 Mainly There are 3 basic classfications of patterns 
 1)Creational Patterns:-- The process of object creation
