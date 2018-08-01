@@ -7,7 +7,8 @@ we can classify three types of Frame Work Softwares
 ### Hibernate
 useing Hibernate we can simplify Persistence layer/DAO layer
 ### Struts 
-useing this frameWork S/w We can simplify WebApplications
+Struts is a Framework for building Servlet/JSP based web applications based on the MVC design paradigm
+using this frameWork S/w We can simplify WebApplications
 ### Spring
  useing this we can simplify Web And EnterPrise Development...
 *  SpringCore
@@ -26,7 +27,7 @@ __javas APIs for distributed applications
 * EJB
 * WebServices(SOAP and RESTful)
 
-### 
+
 ### EJB
 
 EJB is an acronym for enterprise java bean. It is a specification provided by Sun Microsystems to develop secured, robust and scalable distributed applications.
