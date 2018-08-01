@@ -77,12 +77,12 @@ Mainly There are 3 basic classfications of patterns
 
 ### Enterprise Application level Design patterns
 ================================================
-DAO DesignPattern
-DAO Factory DesignPattern
-ServiceLocator DesignPattern
-BusinessDelegate DesignPattern
-SessionFacade DesignPattern
-MessageFacade DesignPattern
+* DAO DesignPattern
+* DAO Factory DesignPattern
+* ServiceLocator DesignPattern
+* BusinessDelegate DesignPattern
+* SessionFacade DesignPattern
+* MessageFacade DesignPattern
 
 Note:  Integration Tier design patterns:-- ServiceLocation,Businedeligates,dao
 Buseiness tier-->sessionfacade,messagefacde,business object.
