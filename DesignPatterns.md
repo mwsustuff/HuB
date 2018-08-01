@@ -219,7 +219,7 @@ __rules__
 2. to take all member varibles as private
 3. if mehod demands to modfy data take that method as factory method.
 eg
-======
+~~~
 
 public class Demo {
 
@@ -251,7 +251,8 @@ public Demo()
 	this.no = no;
 	System.out.println("0-intargument constructor");
 }
-	
+~~~
+~~~
 	//instance factory method
 	public Demo modifyName(String s)
 	{
@@ -272,7 +273,8 @@ public Demo()
 	}
 	}
 
-
+~~~
+~~~
 class ImmutableTest
 {
 	public static void main(String[] args) 
@@ -296,21 +298,21 @@ class ImmutableTest
 		System.out.println("Hello World!");
 	}
 }
+~~~
+### SingleTon DesignPattern
 
-SingleTon DesignPattern
-========================
 
 
-problem
-================
+__problem__
+
 creating mutiple objects for java class with same data is wastage of memory..
 
-solution
-=============
+__solution__
+
 use Singleton java class,which says create only one object for java class and use it for multiple times
 on each jvm in order to minimize the memory wastage and to increase the performance.
 
-def: Stingleton java class ,which allowes us to create only one object per jvm.
+__def__: Stingleton java class ,which allowes us to create only one object per jvm.
 
 
 The method in javaclass which is capable of constructing its own javaclassobject is called factory method .
@@ -319,18 +321,18 @@ java class that allowes to create only one object per jvm is called singletonjav
 note: For a normal java class if programmer or container is creating only one object even though that class allowes to create multiple object then that java class is not singleton java class.
 According to this,then a java class of servlet program is not singleton java class. it is a normal java class for which servelt container creates only one object.
 
-Applicability
-================
+__Applicability__
+
 The singleton pattern should be used when there must be exactly one instance of a class,and when it must be accessible to clients from a global access point.
 If multiple applications of a project that are running from a single jvm wants to work with objects
 of java class hving same data then it is recommendend to make that java class as singleton java class. so that only one object will be allowed to create for that class and we can use that object for multiple applications.
+
 ex:
-======
    most of of jdbc driver classes are given as singleton java classes for bettern utilization
    in log4j environemnt,the Logger class is given as singleton java class.
    java.lang.Runtime class is singleton java class.
-Rules to develop singleton java class
-================================================
+__Rules to develop singleton java class__
+
 1)take  private static referece varible of the current class as instance varible
 2)To preven instantating the class more then once, take private constructor so that an instance can be created only from within the static method of the class.
 3)develop static factory method,which will return an instance of current class,or null, if the class has already been instanatiated.
