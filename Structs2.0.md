@@ -1,6 +1,6 @@
 web applications we can classfied two types
-1. odel-1
-2. Model-11 or mvc
+1. Model-1 or Mvc1
+2. Model-11 or mvc2 or MVC
 
 The struts2 framework is used to develop Mvc based applications.struts2 is the combination of webwork frmework of opensymphony and struts1
 
