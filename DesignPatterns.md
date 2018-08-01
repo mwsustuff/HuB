@@ -50,8 +50,8 @@ Mainly There are 3 basic classfications of patterns
 
 > Now we can see the Regularly used design patterns in real time java projects as they are classfied based on the type of applciations which we are developing.
  
- Corejavalevel or Standalone Application level Designpatterhs
-=============================================================
+### Corejavalevel or Standalone Application level Designpatterhs
+
 * FactoryMethod DesignPattern
 * SingleTon DesignPattern
 * Synchronized singleton DesignPattern
@@ -87,8 +87,8 @@ Mainly There are 3 basic classfications of patterns
 Note:  Integration Tier design patterns:-- ServiceLocation,Businedeligates,dao
 Buseiness tier-->sessionfacade,messagefacde,business object.
 
-FactoryMethod DesignPattern
-============================
+## FactoryMethod DesignPattern
+
  __problem__
 When a java class hving private constructor , then outside of that class object creation of that class is not possible
 
@@ -427,10 +427,11 @@ public class SingleTonPatternTest {
 	}
 
 }
-========================================================================
-TemplatemethodDesignPattern
-=======================
+
+## TemplatemethodDesignPattern
+
 Instead of invoking mulitple different methods to combined task,it is recommendd to combine all these methods into a single method 
+~~~
 task1--->a(),b(),C()
 
 task2--->a(),b(),C()
@@ -452,9 +453,10 @@ task1--->abc
 task2--->abc
 
 task3--->abc
-         
-	 CommandLine View Design pattern
-	 ===============================
+  ~~~       
+## CommandLine View Design pattern
+
+~~~
 	 class Test
 	 {
 
@@ -483,7 +485,8 @@ bm1();
 
 }
 }
-
+~~~
+~~~
 class Command
 {
 abc()
@@ -513,13 +516,15 @@ xyz();
 
 }
 }
-Prototype deisgnPattern
-========================
+~~~
+## Prototype deisgnPattern
+
 Istead of creating multiple objects for same java class which consumes lot of time it is recommeded to create only one object and make multiple copies of the same object either by usieng cloning approach or any other approach,later modify them as appropriate
 
 
-Adapter designPattern
-==============
+## Adapter designPattern
+
+~~~
 interface xyz
 {
 a();
@@ -564,27 +569,24 @@ x()
 {}
 
 }
+~~~
 
-Factory Pattern
-=================
-problem
-=====
+## Factory Pattern
+
+__problem__
 creating multiple objects for multiple subclasses and utilizing one of them based on the supplied data is wrong methodolgy bcz the remaining objects became unnecssarily
 created objects.
-
-Solution
-=====
+__Solution__
 here the mehtod of super class or some other class instantiates/creates one of the several subclasses obj
 ect based on the supplied data provided by user(at compile time/at runtime)that means objects for remaining subclasses will not be created.
 
-Def: Define an inteface for creating an object,but let the sbclasses decide which class to instatiate . the factory method lets a class defer instatiation to subclasses.
+__Def__: Define an inteface for creating an object,but let the sbclasses decide which class to instatiate . the factory method lets a class defer instatiation to subclasses.
 
-eg:
-===
-In jdbc Applications DriverManager.getConnection(---) method logic is nothing but factory pattern logic 
+>  eg:In jdbc Applications DriverManager.getConnection(---) method logic is nothing but factory pattern logic 
 
-EG
-===
+
+~~~
+
 abstract class ShapeEx
 {
 public abstract void draw();
@@ -611,7 +613,8 @@ public void draw()
 System.out.println("square to Draw()");;
 }
 }
-
+~~~
+~~~
 public class FactoryPattenTest
 {
 
@@ -622,7 +625,8 @@ FactoryPattenTest fp=new FactoryPattenTest();
 ShareEx s=fp.getShapre(args[0]);//data is supplied at runtime
 
 }
-
+~~~
+~~~
 //Factory pattern logic
 public ShapeEx getShape(String  shapes)
 {
@@ -637,13 +641,11 @@ return null;
 }
 
 }
-
-AbstractFactoryPattern
-=====================
-prvide an interface for creating dependent object without specifying their concrete classes.
-
+~~~
+## AbstractFactoryPattern
+provide an interface for creating dependent object without specifying their concrete classes.
+~~~
 eg
-===
 abstract class College
 {
 public abstract Display getBranchName();
@@ -660,7 +662,8 @@ public Display getCount()
 return new Display("120");
 }
 }//end cse
-
+~~~
+~~~
 class It extends College
 {
 public  Display getBranchName()
@@ -672,7 +675,8 @@ public Display getCount()
 return new Display("90");
 }
 }//end It
-
+~~~
+~~~
 class MCA extends College
 {
 public  Display getBranchName()
@@ -696,7 +700,8 @@ public String getValue()
 return value;
 }
 }
-
+~~~
+~~~
 public class AbstractFactoryPatternTest
 {
 
@@ -709,7 +714,8 @@ System.out.println("Object is created"+c.getClass());
 System.out.println("BranchName is "+c.getBrachName().getValue());
 System.out.println(c.getBrachName().getValue()+"Branch contains "+c.getCount().getValue()+"No.ofStudent");
 }
-
+~~~
+~~~
 //Factory pattern Logic
 public College getCollege(String s)
 {
@@ -723,19 +729,17 @@ cname=new MCA();
 return cname;
 }
 }
+~~~
+## BuilderDesign pattern
 
-BuilderDesign pattern
-========================
 Builder as thename suggest builds complex objects from simple ones step-by-step.Itseparates the constructor of complex objects from their representation
-problem
-======
+__problem__
 In order to complete a task working with simple and individual objects is always complex process to perform
-
-solution
-===============
+__solution__
 use this patter,which says creates complex object fro simple objects and work with that complex object to complete the task.
+
 eg
-===
+~~~
 class CPU
 {
 
@@ -793,35 +797,34 @@ public int calPrice()
 return new Cpu().price()+new Monitor().price()+new Perphirals().price();
 }
 }
-DI/ioc
-======
+~~~
+## Dependency Injection/ Inversion of control
+
 The process of Injecting(pushing)the depencecies into an object is known as dependecy injection .
 
-Mvc(Model View Control)
-=======================
-Model
-Model2
+## Mvc(Model View Control)
 
-DataTransferObject
-===================
+> Model
+  Model2
+
+## DataTransferObject
+
 Dto(DataTransferObject)/vo(ValueObject)
-============================================
-probleam-1
-==========
+
+__probleam-1__
+
 We cannot send jdbc Resultset Object from one layer to another layer over the network bcz it is not a serliable object
               To solve the requirement copy JdbcResultSetObject data to any collection f/w data structure
 	      and send that data structure over the network. since all collection f/w data structure are by default serializable objects.
 
 	      Note: if you are just performing read operation on collection framework data structures then you can take any non-Synchronized data Structure like Arraylist.if you want to perform read,
 	      update,delete etc... operations on collection f/w data structure then use any synchronized data structure like vector.
-probleam-2
-==========
-
+__probleam-2__
 While transfering ResuletSet object record to set/list data structure elements the following problem will be raised. we cannot move each record of ResultSet object to each element of Arraylist object bcz each record of ResultSet object may contains multiple values where as each element of ArrayList can store only
 one java object at a time.
 
-Solution
-============
+__Solution__
+
 create a user defined java class object hving each record values and add tha object to the elements
 of ArrayList .Here the class of that user defined object is called as DTO/Vo class (it is generally a java Bean)
 
@@ -831,27 +834,27 @@ note: teh elements added to collection framework data structure must be taken as
 
 note: Logic to transfer ResultSet object to Arraylist Object by taking the support of DTO/Vo
 
-CompositeViewDesignpattern
-=============================
-FRontController Desigpattern
-===============================
+## CompositeViewDesignpattern
+
+## FRontController Desigpattern
+
 is a spacial webresource program of a web applciation that is capable of trapping and taking the request coming to toher web resources of web application by hving common and global pre-requesting processing logic eg: ActionServlet in struct 1.x ,springwebmvc DispatchServlet...
     The frontController design pattern means that all request taht come for a resource in an application will be handled by a single handler and then dispatched to the appropriate thandler for that type
     of request the front controller may use other helpers to achieve the dispatching mechaism.
 
     note: The front contoller design pattern is applicable and usefull for all kind of applications be it web or desktop applciations and is not limited to any single programing language or f/w
-  Abstract Controller
-  ====================
+  
+## Abstract Controller
+
 Abstract Controller is the helper class for front controller(servlet/jsp) it provides environment to programer to customize the logic of front controller.
 
-ex: in Structs 1.x environment Requestprocessor class acts as Abstract controller for the FrontController(ActionServlet);
-In structs 1.x environemtn,if you wnat to customize the logic of ActionServlet(Front constoller) then we hv to develop custom RequestProcessor class(Abstract Controller) and then instantiates in front contoller and call its methods.
+> ex: in Structs 1.x environment Requestprocessor class acts as Abstract controller for the FrontController(ActionServlet);
+  In structs 1.x environemtn,if you wnat to customize the logic of ActionServlet(Front constoller) then we hv to develop custom           RequestProcessor class(Abstract Controller) and then instantiates in front contoller and call its methods.
 
 
-Dao(DataAccessObject) DesignPattern
-======================================
-problem
-================
+## Dao(DataAccessObject) DesignPattern
+
+__problem__
 In any project if persistence is combined with the other logics of the application(like Businesslogic,Servicelogic)Then persistence logic will not become Flexible to modify the modifications done
 in persistence logic may distub other logics of the applications.
 Solution:Use DAo Designpattern.
@@ -864,8 +867,9 @@ def: The java class or Component that separates persistence logic from other log
   
   A single Dao class/Component can be used by  all business components or each business componetn can contain their own dao class/Component. But it is alwasy recommended to use separate dao classes/component for each business component.
 we can develop this Dao classs/Component useing my persistence logic like jdbc,Hibernate,EjbEntitybean ,spring-jdbc,spring-ormcomponent.etc....
+~~~
 Eg:
-====
+
 //BaseDao.java
 ===============
 public class BaseDao
@@ -913,9 +917,9 @@ Connection con=BasicDao.getConnection();
     con.fetch(--);
     ---
     }}
+~~~
+## DAOFACTORYDESIGNPATTERN
 
-DAOFACTORYDESIGNPATTERN
-=========================
 The DaoFactory desing pattern is nothing but an extension to DAo design pattern.
 Generally we can use DaoDesign patterns in order to separate persistence logic from other logics
 of the application.Here implemented Dao class/Component contains persistence logic with respective to a single a database.If you wnat to work with multiple databases then go through the DAOFActory design pattern.
@@ -924,8 +928,9 @@ Def: DaoFactory design pattern is class or component,which contains logic of con
 Dao factory design pattern is  a combination of both Factory pattern and DaoDesign pattern.
 
   This design pattern helps the programer to change the database sofware of the project with minimum changes done in jdbc persistence logic.
+  
   Eg
-  =====
+  ~~~
   //BComp1aseDao.java
   public abstract class BComp1aseDao
   {
@@ -1051,3 +1056,4 @@ dao.closeConnection();
 
 }
 
+~~~
