@@ -1,7 +1,6 @@
 ### Framework
-FrameWork s/w is collection of classes and interfaces To simplify application Development
-we can classfy
-Three types of Frame Work Softwares
+FrameWork software  is collection of classes and interfaces To simplify application Development
+we can classify three types of Frame Work Softwares
 1. Persistence Framework--->Hibernate
 2. WebFrameWork----------->Struts
 3. EnterPrise FrameWork-------------->Spring
