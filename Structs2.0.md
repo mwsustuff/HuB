@@ -13,7 +13,7 @@ support to various results types such as FreeMaker,velocity,jsp....
 interceptor is used to perform operations such as validation,
 exceptinhandling,internationalizaton,displaying intermediate result
 
-###ValueStack
+### ValueStack
 Valustack is simpliy a stack it contains application specific objects such as 
 action objects and other model object
 
