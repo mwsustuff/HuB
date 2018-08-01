@@ -1,5 +1,9 @@
-# Restful API
-| API     | Implementation class    | vendor |
-| --------|---------|-------|
-| Jax Rs  | Jersey   | oracle    |
-| Tuesday | chicken | $8    |
+
+Java Persistsnce API
+Java Messaging Service API
+java Server Faces
+Java API for XML-Based RPC(JAX-RPC)
+Java API for XML Based WebServices(JAX-WS)
+Java API for Restful Web Services(JAX-RS)
+Jackson API
+Java API for XML Binding(JAX-B)
