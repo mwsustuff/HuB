@@ -1,51 +1,67 @@
 __ls__
+
 Shows list of files and directories.
+
 This is probably one of the most commonly typed commands. This has many options to see different types of files and it also supports wild cards.
 
-Show all files in current directory
-ls
-Show all files in a directory /mydir/some/path
+1.  Show all files in current directory
+> ls
 
-ls /mydir/some/path
+2. Show all files in a directory /mydir/some/path
+> ls /mydir/some/path
 
-Display details of all file in the list 
-ls -l
-Display all hidden files as well (including the files name start with a do )
-ls -a
-Display all file that have names starting with my
+3. Display details of all file in the list 
+> ls -l
 
-ls my*
+4.Display all hidden files as well (including the files name start with a do )
+> ls -a
 
-cd 
+5.Display all file that have names starting with my
+>ls my*
+
+__cd__
+
 Used to change directory
-Go to the home directory of logged in user
-cd
-Go to a specific directory named /mydir/some/path
-cd /mydire/some/path
 
-cp
+1. Go to the home directory of logged in user
+> cd
+
+2. Go to a specific directory named /mydir/some/path
+> cd /mydire/some/path
+
+__cp__
+
 Copy a file or directory from one location to another. 
-Copy a file name file1 with name file2
-cp file1 file2
-Copy the directory name dir1 to dir2
-cp -r dir1 dir2
 
-mkdir
+1. Copy a file name file1 with name file2
+> cp file1 file2
+
+2.Copy the directory name dir1 to dir2
+> cp -r dir1 dir2
+
+__mkdir__
+
 Create one or more directories
-Create a directory named mydirecory
-mkdir mydirectory
-Create 3 directories name dir1, dir2 and dir3
-mkdir dir1 dir2 dir3
 
-man
+1. Create a directory named mydirecory
+> mkdir mydirectory
+
+2. Create 3 directories name dir1, dir2 and dir3
+> mkdir dir1 dir2 dir3
+
+__man__
+
 Used to read more details about how to use any command
-There are hundreds of commands and each of these commands are supported with dozens of options. You can always use this command to explore more options supported by a command. 
-Show help for ls command 
-man ls
-Show help for grep command 
-man grep
 
-mv - Rename command
+There are hundreds of commands and each of these commands are supported with dozens of options. You can always use this command to explore more options supported by a command. 
+
+1. Show help for ls command 
+> man ls
+2. Show help for grep command 
+> man grep
+
+__mv__ - Rename command
+
 Used for renaming a file or directory. 
 
 Rename file1 to file2
