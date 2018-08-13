@@ -19,6 +19,8 @@ This is probably one of the most commonly typed commands. This has many options 
 5.Display all file that have names starting with my
 >ls my*
 
+------------------------------------------------------------------------------------------------------------------------------------
+
 __cd__
 
 Used to change directory
@@ -29,6 +31,7 @@ Used to change directory
 2. Go to a specific directory named /mydir/some/path
 > cd /mydire/some/path
 
+------------------------------------------------------------------------------------------------------------------------------------
 __cp__
 
 Copy a file or directory from one location to another. 
@@ -39,6 +42,7 @@ Copy a file or directory from one location to another.
 2.Copy the directory name dir1 to dir2
 > cp -r dir1 dir2
 
+------------------------------------------------------------------------------------------------------------------------------------
 __mkdir__
 
 Create one or more directories
@@ -48,10 +52,10 @@ Create one or more directories
 
 2. Create 3 directories name dir1, dir2 and dir3
 > mkdir dir1 dir2 dir3
-
+------------------------------------------------------------------------------------------------------------------------------------
 __man__
 
-Used to read more details about how to use any command
+_Used to read more details about how to use any command_
 
 There are hundreds of commands and each of these commands are supported with dozens of options. You can always use this command to explore more options supported by a command. 
 
@@ -59,10 +63,10 @@ There are hundreds of commands and each of these commands are supported with doz
 > man ls
 2. Show help for grep command 
 > man grep
-
+-------------------------------------------------------------------------------------------------------------------------------------
 __mv__ - Rename command
 
-Used for renaming a file or directory. 
+_Used for renaming a file or directory. 
 
 Rename file1 to file2
 
