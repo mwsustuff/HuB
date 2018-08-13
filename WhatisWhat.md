@@ -6,10 +6,13 @@ we can classify three types of Frame Work Softwares
 3. EnterPrise FrameWork-------------->Spring
 ### Hibernate
 useing Hibernate we can simplify Persistence layer/DAO layer
+
+__Def:__ Hibernate is a light weight opensource ORM software to devlop a database  independent OR mapping based persistance logic.
+
 ### Struts 
 Struts is a Framework for building Servlet/JSP based web applications based on the MVC design paradigm
 using this frameWork S/w We can simplify WebApplications
-### Spring
+### Sprin-g
  useing this we can simplify Web And EnterPrise Development...
 *  SpringCore
 *  SpringJdbc
