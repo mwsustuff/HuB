@@ -14,7 +14,7 @@ ex: Html(HyperTextmarkupLanguage) is one of the markup language derived from sgm
 
 __XML----->(extensible MarkUpLanguage)__
 
-is a meta markup language used to define a markup language.
+XML is a meta markup language used to define a markup language.
 some of the markup languages dervied the xml standards are
 
 * xhtml
@@ -26,34 +26,35 @@ some of the markup languages dervied the xml standards are
 note: html is a simple markup language derived from sgml where as xml is a meta markup language which is used to define markup langagues like html
 
 what is the difference between html and xml?
-html
-=====
-predefined taga
-limited no of tags
-Tags are case insensitive
-tags are meant for displaying the data but not for descbing the data
-html focuses on how data looks
 
-xml
-====
-user defined tags
-tags are extedsnsible
-tags are case senstive
-tags are meant for describing the data
-xml focuses on waht data is....
+#### html
 
-what is purpose of xml
-==============================
-xml is used to exchange the information between application in language(java,.net.php) independent
+* predefined taga
+* limited no of tags
+* Tags are case insensitive
+* tags are meant for displaying the data but not for descbing the data
+* html focuses on how data looks
+
+#### xml
+
+* user defined tags
+* tags are extedsnsible
+* tags are case senstive
+* tags are meant for describing the data
+* xml focuses on waht data is....
+
+#### what is purpose of xml
+
+* xml is used to exchange the information between application in language(java,.net.php) independent
 vendor indepednent and platform independent manner over web.
 
-xml documents are used to testual databases
-xml documents are sued as deployment descriptors
-xml is used to Create new internet languages (xhtml,wsdl,wap,smil.....)
+* xml documents are used to testual databases
+* xml documents are sued as deployment descriptors
+* xml is used to Create new internet languages (xhtml,wsdl,wap,smil.....)
 
 
-XML(dtd,xsd)
-===========
+#### XML(dtd,xsd)
+
 To persist the data
 complexty of the application was increased
 increaed the development time and cost of the application
@@ -70,8 +71,8 @@ In Simple Terms SGML is used to define a markup language
 
 ex: Html(Hyper TExt Markup Language) is one of the markup language derived from SGML
 
-MarkUpLanguage
-================
+#### MarkUpLanguage
+
 
 XML(Extensible Markup Language)is a meta markup language used to define a markup language
 
@@ -97,6 +98,7 @@ wide support from almost all the enviornments
 
 3) It is used to describe some information or give instructions to an application or product
 self descriptive which makes the document to be less error prone.
+
 what is purpose of xml
 ==============================
 xml is used to exchange the information between application in language(java,.net.php) independent
